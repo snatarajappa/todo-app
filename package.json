@@ -1,0 +1,75 @@
+{
+  "name": "my-app",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@domoinc/ryuu-proxy": "^4.0.6",
+    "@reduxjs/toolkit": "^1.2.5",
+    "@types/enzyme": "^3.10.8",
+    "@wojtekmaj/enzyme-adapter-react-17": "^0.4.1",
+    "enzyme": "^3.11.0",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0",
+    "react-redux": "^7.2.0",
+    "react-scripts": "5.0.1",
+    "typescript": "^4.0.3"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "lint": "eslint 'src/**/*.ts?(x)'",
+    "upload": "yarn build && cd build && domo publish && cd ..",
+    "upload:prod": "yarn build:prod && cd build && domo publish && cd ..",
+    "storybook": "start-storybook -p 6006 -s public",
+    "generate": "da generate",
+    "prestart": "da apply-manifest start",
+    "postbuild": "da apply-manifest build",
+    "build:prod": "GENERATE_SOURCEMAP=false react-scripts build",
+    "postbuild:prod": "da apply-manifest build"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.0",
+    "@domoapps/da": "git+ssh://git@github.com:DomoApps/da.git#1.1.1",
+    "@domoapps/eslint-config": "git+ssh://git@github.com:DomoApps/eslint-config.git#1.2.1",
+    "@domoapps/prettier-config": "git+ssh://git@github.com:DomoApps/prettier-config.git#1.2.0",
+    "@storybook/addon-actions": "^6.5.0-alpha.3",
+    "@storybook/addon-essentials": "^6.5.0-alpha.3",
+    "@storybook/addon-links": "^6.5.0-alpha.3",
+    "@storybook/builder-webpack5": "^6.5.0-alpha.3",
+    "@storybook/manager-webpack5": "^6.5.0-alpha.3",
+    "@storybook/node-logger": "^6.5.0-alpha.3",
+    "@storybook/preset-create-react-app": "^4.0.0",
+    "@storybook/react": "^6.5.0-alpha.3",
+    "@types/jest": "^24.0.0",
+    "@types/node": "^12.0.0",
+    "@types/react": "^16.9.0",
+    "@types/react-dom": "^16.9.0",
+    "@types/react-redux": "^7.1.7",
+    "@typescript-eslint/eslint-plugin": ">=4.0.0",
+    "@typescript-eslint/parser": ">=4.0.0",
+    "babel-loader": "^8.2.3",
+    "eslint-config-prettier": "^6.0.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "eslint-plugin-react": "^7.14.3",
+    "node-sass": "^7.0.0",
+    "prettier": ">=2.0.0",
+    "react-is": "^16.13.1"
+  }
+}
