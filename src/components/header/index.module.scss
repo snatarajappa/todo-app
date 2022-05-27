@@ -1,0 +1,98 @@
+@import 'styles/variables.scss';
+
+.Header {
+    background: #E5E5E5;
+
+    .Start {
+        .Logo {
+            position: absolute;
+            left: 10%;
+            top: 10%;
+        }
+
+        .Profile {
+            position: absolute;
+            width: 35px;
+            height: 35px;
+            right: 10%;
+            top: 10%;
+        }
+    }
+
+    .Title {
+        position: absolute;
+        width: 50%;
+        height: 10%;
+        left: 10%;
+        top: 15%;
+
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 35px;
+        line-height: 48px;
+        /* identical to box height */
+
+
+        color: #000000;
+
+    }
+
+    .SubTitle {
+        position: absolute;
+        width: 80%;
+        height: 19px;
+        left: 10%;
+        top: 23%;
+
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 19px;
+        /* identical to box height */
+
+
+        /* Icons / Light */
+
+        color: rgba(0, 0, 0, 0.3);
+
+        .SearchIcon {
+            position: absolute;
+            width: 19px;
+            height: 19px;
+            right: 10%;
+            top: 22%;
+        }
+
+        .DropDownContainer {
+            position: absolute;
+            width: 19px;
+            height: 19px;
+            right: 0%;
+            top: 22%;
+
+            background: #FAFAFA;
+
+            .ThreeDots {
+                align-self: center;
+                text-align: right;
+            }
+        }
+
+
+    }
+
+    .End {
+        position: absolute;
+        width: 118px;
+        height: 5px;
+        left: 0%;
+        top: 30%;
+
+        /* Icons / Warn */
+
+        background: #FB8D34;
+        border-radius: 0px 3px 3px 0px;
+    }
+}

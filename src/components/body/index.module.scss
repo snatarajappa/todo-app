@@ -1,0 +1,52 @@
+@import 'styles/variables.scss';
+
+.Body {
+
+    background: rgba(0, 0, 0, 0.02);
+
+    .SearchBar {
+        .Search {
+            position: absolute;
+            top: 32%;
+            left: 10%;
+            width: 80%;
+
+            [type=search] {
+                width: 85%;
+                background: rgba(118, 118, 128, 0.12);
+                border-radius: 10px;
+                border: none;
+            }
+
+            img {
+                height: 80%;
+                left: 1%;
+                top: 10%;
+                position: absolute;
+                width: 6%;
+                align-items: center;
+            }
+        }
+
+        .Filter {
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            left: 86%;
+            top: 32%;
+        }
+    }
+
+
+
+
+
+
+
+    .Content {
+        position: absolute;
+        top: 40%;
+        left: 10%;
+        width: 80%;
+    }
+}

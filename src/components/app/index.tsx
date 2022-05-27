@@ -9,7 +9,7 @@ const App = () => (
       <img src={logo} className={styles.App__logo} alt="logo" />
       <h1>Advanced App Platform Package</h1>
       <Counter />
-      <p>
+      {/* <p>
         Edit <code>src/App.tsx</code> and save to reload.
       </p>
       <span>
@@ -49,7 +49,7 @@ const App = () => (
         >
           React Redux
         </a>
-      </span>
+      </span> */}
     </header>
   </div>
 );

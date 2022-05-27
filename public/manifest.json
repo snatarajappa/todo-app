@@ -1,9 +1,16 @@
 {
   "name": "Advanced React DomoApp",
   "version": "0.0.1",
+  "id":"84a6e46b-df37-42d8-b9cf-b6327099ca67",
+  "proxyId":"dd5530c9-2c0a-4d1e-8454-26d74760781a",
   "size": {
-    "width": 3,
-    "height": 3
+    "width": 2,
+    "height": 2
   },
-  "mapping": []
+  "mapping": [],
+  "collections":[
+    {
+      "name":"tasks"
+    }
+  ]
 }
