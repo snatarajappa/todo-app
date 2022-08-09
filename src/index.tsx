@@ -1,24 +1,28 @@
-import React, { Component } from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './styles/index.scss';
-import 'bootstrap/scss/bootstrap.scss';
-import 'font-awesome/css/font-awesome.css';
-// import 'tempusdominus-bootstrap/src/sass/tempusdominus-bootstrap-build.scss';npm i react-bootstrap-time-picker --save
 import App from 'components/app';
 import { store } from './reducers';
 import { Provider } from 'react-redux';
-import { Dashboard } from 'components/dashboard';
+import { createTheme, ThemeProvider } from '@material-ui/core';
+
+const theme = createTheme({
+  palette: {
+    primary: {
+      main: '#FC9927',
+    },
+    secondary: {
+      main: '#99CCEE',
+    },
+  },
+});
 
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
-      <Router>
-        <Routes>
-          <Route path="test" element={<App />} />
-          <Route path="/" element={<Dashboard />} />
-        </Routes>
-      </Router>
+      <ThemeProvider theme={theme}>
+        <App />
+      </ThemeProvider>
     </Provider>
   </React.StrictMode>,
   document.getElementById('root'),

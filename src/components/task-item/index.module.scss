@@ -1,0 +1,40 @@
+@import 'styles/variables.scss';
+
+.TaskItem {
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.SecondaryText {
+    transform: translateY(-100%) !important;
+}
+
+.Priority1 {
+    height: 23px;
+    width: 63px;
+    border-radius: 33px;
+    background: #FDECAD;
+    text-align: center;
+}
+
+.Priority2 {
+    height: 23px;
+    width: 63px;
+    border-radius: 33px;
+    background: #FBAD56;
+    text-align: center;
+}
+
+.Priority3 {
+    height: 23px;
+    width: 63px;
+    border-radius: 33px;
+    background: #FD9A93;
+    text-align: center;
+}
+
+.CheckBox>span {
+    margin-top: -5px;
+}

@@ -1,12 +1,16 @@
 // WARNING: DO NOT DELETE ANY BOILERPLATE COMMENTS IN THIS FILE.
 // IF YOU DO, GENERATED REDUCERS WILL NOT BE WIRED UP AUTOMATICALLY.
 import { configureStore, ThunkAction, Action } from '@reduxjs/toolkit';
-import counterReducer from './counter/reducer';
+import taskReducer from './task/reducer';
+import taskGroupReducer from './task-group/reducer';
+import authenticationReducer from './identity/reducer';
 // importRef
 
 export const store = configureStore({
   reducer: {
-    counter: counterReducer,
+    task: taskReducer,
+    taskGroup: taskGroupReducer,
+    authentication: authenticationReducer,
     // reducerRef
   },
 });

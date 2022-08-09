@@ -1,0 +1,33 @@
+@import 'styles/variables.scss';
+
+.Search {
+    padding: 4%;
+}
+
+.Input {
+    flex: 1;
+    flex-direction: row;
+}
+
+.SearchBar {
+    text-align: left;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.SwapButton {
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    transform: translateY(-20%);
+}
+
+.OrderIcon {
+    color: rgba(0, 0, 0, 0.54);
+    margin: 10px;
+
+    &.SortByPriority {
+        color: #99CCEE;
+    }
+}

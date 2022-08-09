@@ -1,16 +1,71 @@
 {
-  "name": "Advanced React DomoApp",
-  "version": "0.0.1",
-  "id":"84a6e46b-df37-42d8-b9cf-b6327099ca67",
-  "proxyId":"dd5530c9-2c0a-4d1e-8454-26d74760781a",
+  "name": "Santhosh ToDo App",
+  "version": "1.0.0",
   "size": {
-    "width": 2,
-    "height": 2
+    "width": 3,
+    "height": 3
   },
   "mapping": [],
-  "collections":[
+  "collections": [
     {
-      "name":"tasks"
+      "name": "TaskGroup",
+      "schema": {
+        "columns": [
+          {
+            "name": "id",
+            "type": "STRING"
+          },
+          {
+            "name": "name",
+            "type": "STRING"
+          },
+          {
+            "name": "userId",
+            "type": "STRING"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Task",
+      "schema": {
+        "columns": [
+          {
+            "name": "id",
+            "type": "STRING"
+          },
+          {
+            "name": "title",
+            "type": "STRING"
+          },
+          {
+            "name": "notes",
+            "type": "STRING"
+          },
+          {
+            "name": "url",
+            "type": "STRING"
+          },
+          {
+            "name": "dueDate",
+            "type": "STRING"
+          },
+          {
+            "name": "priority",
+            "type": "STRING"
+          },
+          {
+            "name": "status",
+            "type": "STRING"
+          },
+          {
+            "name": "taskGroupId",
+            "type": "STRING"
+          }
+        ]
+      }
     }
-  ]
+  ],
+  "id": "8be4dcdc-3128-4848-ba1d-b90749fff7fc",
+  "proxyId": "d029c461-679f-4c32-97b1-dfc7065e4bae"
 }
