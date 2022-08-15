@@ -1,7 +1,7 @@
 # My ToDo App
 
-This application is created with React, TypeSfript, Redux and Material UI and Domo Collections at the backend.
-Use can acreate new rask, update the task, mark it as completed, delete the task, search the task, etc.
+- This application is created with React, TypeSfript, Redux and Material UI and Domo Collections at the backend.
+- User can acreate new rask, update the task, mark it as completed, delete the task, search the task, etc.
 
 
 
